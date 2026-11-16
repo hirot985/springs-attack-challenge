@@ -88,3 +88,10 @@
 .player-size-control{display:flex;align-items:center;gap:10px;padding:9px 22px 0;font-size:11px;color:#45657a;flex:0 0 auto}.player-size-control input{flex:1;min-width:60px;accent-color:#0878ce}
 
 .photo-preview:not(.coach-frame):not(.mascot-frame) #frame-player{top:5%}.frame-top,.frame-bottom{z-index:2}
+
+/* Keep camera action visible immediately, before the scrollable photo controls. */
+.photo-actions{position:sticky;top:0;z-index:4;flex:0 0 auto;padding:8px 20px 12px;background:#f1fbff}
+.photo-result > .primary,.photo-result > .secondary{flex:0 0 auto;min-height:48px;font-size:15px;border-radius:18px}
+.photo-result .finish-yellow{background:linear-gradient(110deg,#ffe66a,#ffd23c);color:#593f00;box-shadow:0 5px 0 #c89c19,0 8px 16px #b98b1320}
+.photo-result .finish-yellow:active{box-shadow:0 2px 0 #c89c19}
+.photo-result > .primary,.photo-result > .secondary{height:52px;min-height:52px}
